@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		413451271E919CE100871BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 413451261E919CE100871BFC /* main.m */; };
+		4134512F1E919D7E00871BFC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134512E1E919D7E00871BFC /* Player.m */; };
+		413451321E919D9700871BFC /* Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 413451311E919D9700871BFC /* Frame.m */; };
+		413451381E91ADA000871BFC /* Roll.m in Sources */ = {isa = PBXBuildFile; fileRef = 413451371E91ADA000871BFC /* Roll.m */; };
+		4134513C1E91DF9100871BFC /* ScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4134513B1E91DF9100871BFC /* ScoreBoard.m */; };
+		41D5FFFC1E93325900751A68 /* GameRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D5FFFB1E93325900751A68 /* GameRules.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		413451231E919CE100871BFC /* KataBowling-Challenge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "KataBowling-Challenge"; sourceTree = BUILT_PRODUCTS_DIR; };
 		413451261E919CE100871BFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4134512D1E919D7E00871BFC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		4134512E1E919D7E00871BFC /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		413451301E919D9700871BFC /* Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frame.h; sourceTree = "<group>"; };
+		413451311E919D9700871BFC /* Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frame.m; sourceTree = "<group>"; };
+		413451361E91ADA000871BFC /* Roll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roll.h; sourceTree = "<group>"; };
+		413451371E91ADA000871BFC /* Roll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Roll.m; sourceTree = "<group>"; };
+		4134513A1E91DF9100871BFC /* ScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoard.h; sourceTree = "<group>"; };
+		4134513B1E91DF9100871BFC /* ScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoard.m; sourceTree = "<group>"; };
+		41D5FFFA1E93325900751A68 /* GameRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRules.h; sourceTree = "<group>"; };
+		41D5FFFB1E93325900751A68 /* GameRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRules.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +73,71 @@
 			isa = PBXGroup;
 			children = (
 				413451261E919CE100871BFC /* main.m */,
+				413451341E919DA000871BFC /* Model */,
 			);
 			path = "KataBowling-Challenge";
+			sourceTree = "<group>";
+		};
+		413451331E919D9A00871BFC /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				413451301E919D9700871BFC /* Frame.h */,
+				413451311E919D9700871BFC /* Frame.m */,
+			);
+			name = Frame;
+			path = Model/Frame;
+			sourceTree = "<group>";
+		};
+		413451341E919DA000871BFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				413451351E919DA600871BFC /* Player */,
+				41D5FFFD1E93326000751A68 /* GameRules */,
+				4134513D1E91DFAC00871BFC /* ScoreBoard */,
+				413451331E919D9A00871BFC /* Frame */,
+				413451391E91ADAA00871BFC /* Roll */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		413451351E919DA600871BFC /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				4134512D1E919D7E00871BFC /* Player.h */,
+				4134512E1E919D7E00871BFC /* Player.m */,
+			);
+			name = Player;
+			path = Model/Player;
+			sourceTree = "<group>";
+		};
+		413451391E91ADAA00871BFC /* Roll */ = {
+			isa = PBXGroup;
+			children = (
+				413451361E91ADA000871BFC /* Roll.h */,
+				413451371E91ADA000871BFC /* Roll.m */,
+			);
+			name = Roll;
+			path = Model/Roll;
+			sourceTree = "<group>";
+		};
+		4134513D1E91DFAC00871BFC /* ScoreBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4134513A1E91DF9100871BFC /* ScoreBoard.h */,
+				4134513B1E91DF9100871BFC /* ScoreBoard.m */,
+			);
+			name = ScoreBoard;
+			path = Model/ScoreBoard;
+			sourceTree = "<group>";
+		};
+		41D5FFFD1E93326000751A68 /* GameRules */ = {
+			isa = PBXGroup;
+			children = (
+				41D5FFFA1E93325900751A68 /* GameRules.h */,
+				41D5FFFB1E93325900751A68 /* GameRules.m */,
+			);
+			name = GameRules;
+			path = Model/GameRules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413451321E919D9700871BFC /* Frame.m in Sources */,
+				41D5FFFC1E93325900751A68 /* GameRules.m in Sources */,
+				4134512F1E919D7E00871BFC /* Player.m in Sources */,
+				413451381E91ADA000871BFC /* Roll.m in Sources */,
 				413451271E919CE100871BFC /* main.m in Sources */,
+				4134513C1E91DF9100871BFC /* ScoreBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +329,7 @@
 				4134512C1E919CE100871BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
