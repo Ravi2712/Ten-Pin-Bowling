@@ -13,6 +13,7 @@ Run Xcode Project.
 ## Usage
 
 Program is designed for multiple players, as well. 
+Here, is the developed Model classes.
 
 ```
  ├───Player
