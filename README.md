@@ -1,4 +1,4 @@
-# Kata Bowling Score Calculator
+# Kata Bowling Score Generator
 
 Ten-pin bowling is a game in which a player (called a "bowler") rolls a bowling ball down a wood-structure or synthetic (polyurethane) lane and towards ten pins positioned at the end of the lane.
 
