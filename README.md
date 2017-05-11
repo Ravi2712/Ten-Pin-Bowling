@@ -52,7 +52,7 @@ Player will be able to see ScoreBoard.
 
 ## Implementation of GameRules
 
-GameRules class is being made for implementation of Game rules. Implementation of Gamerules Protocol provides the ability of getting score.<br/>
+GameRules class is being made for implementation of typical Ten-Pin-Bowling Game-rules. Implementation of Gamerules Protocol provides the ability of getting score.<br/>
 So, Scoreboard implements the Game Rules Protocol. 
 
 ```
